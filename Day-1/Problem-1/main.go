@@ -19,7 +19,7 @@ func main() {
 
 	fileScanner := bufio.NewScanner(fileHandle)
 
-	var frequency int = 0
+	frequency := 0
 
 	for fileScanner.Scan() {
 		num, err := strconv.Atoi(fileScanner.Text())
